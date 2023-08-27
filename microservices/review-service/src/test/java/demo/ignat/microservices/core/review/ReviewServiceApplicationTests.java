@@ -1,10 +1,10 @@
-package demo.ignat.recommendation;
+package demo.ignat.microservices.core.review;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RecommendationServiceApplicationTests {
+class ReviewServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
