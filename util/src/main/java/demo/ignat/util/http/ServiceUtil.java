@@ -14,12 +14,10 @@ public class ServiceUtil {
     private static final Logger LOG = LoggerFactory.getLogger(ServiceUtil.class);
 
     private final String port;
-
     private String serviceAddress = null;
 
     @Autowired
     public ServiceUtil(@Value("${server.port}") String port) {
-
         this.port = port;
     }
 
