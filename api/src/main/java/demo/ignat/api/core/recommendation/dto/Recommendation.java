@@ -1,4 +1,4 @@
-package demo.ignat.api.core.recommendation;
+package demo.ignat.api.core.recommendation.dto;
 
 public record Recommendation(int id,
                              int productId,

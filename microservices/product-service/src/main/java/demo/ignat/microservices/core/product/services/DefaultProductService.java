@@ -1,6 +1,6 @@
 package demo.ignat.microservices.core.product.services;
 
-import demo.ignat.api.core.product.Product;
+import demo.ignat.api.core.product.dto.Product;
 import demo.ignat.api.core.product.ProductService;
 import demo.ignat.api.exception.InvalidInputException;
 import demo.ignat.api.exception.NotFoundException;

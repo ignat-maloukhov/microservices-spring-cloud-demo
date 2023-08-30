@@ -1,4 +1,4 @@
-package demo.ignat.api.config;
+package demo.ignat.api.config.util;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.core.env.PropertiesPropertySource;

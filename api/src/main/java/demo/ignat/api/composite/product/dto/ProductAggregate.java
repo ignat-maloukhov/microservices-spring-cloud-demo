@@ -1,4 +1,4 @@
-package demo.ignat.api.composite.product;
+package demo.ignat.api.composite.product.dto;
 
 import java.util.List;
 

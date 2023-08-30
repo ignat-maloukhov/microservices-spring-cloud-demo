@@ -1,9 +1,13 @@
 package demo.ignat.microservices.composite.productcomposite.services;
 
 import demo.ignat.api.composite.product.*;
-import demo.ignat.api.core.product.Product;
-import demo.ignat.api.core.recommendation.Recommendation;
-import demo.ignat.api.core.review.Review;
+import demo.ignat.api.composite.product.dto.ProductAggregate;
+import demo.ignat.api.composite.product.dto.RecommendationSummary;
+import demo.ignat.api.composite.product.dto.ReviewSummary;
+import demo.ignat.api.composite.product.dto.ServiceAddresses;
+import demo.ignat.api.core.product.dto.Product;
+import demo.ignat.api.core.recommendation.dto.Recommendation;
+import demo.ignat.api.core.review.dto.Review;
 import demo.ignat.api.exception.NotFoundException;
 import demo.ignat.util.http.ServiceUtil;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,5 +1,6 @@
 package demo.ignat.api.core.review;
 
+import demo.ignat.api.core.review.dto.Review;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 

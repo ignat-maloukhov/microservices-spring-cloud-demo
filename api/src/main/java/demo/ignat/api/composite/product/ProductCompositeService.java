@@ -1,5 +1,6 @@
 package demo.ignat.api.composite.product;
 
+import demo.ignat.api.composite.product.dto.ProductAggregate;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

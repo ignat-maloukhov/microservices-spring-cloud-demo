@@ -1,6 +1,6 @@
 package demo.ignat.microservices.core.review.services;
 
-import demo.ignat.api.core.review.Review;
+import demo.ignat.api.core.review.dto.Review;
 import demo.ignat.api.core.review.ReviewService;
 import demo.ignat.api.exception.InvalidInputException;
 import demo.ignat.util.http.ServiceUtil;

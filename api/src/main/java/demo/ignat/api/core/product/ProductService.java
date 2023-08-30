@@ -1,5 +1,6 @@
 package demo.ignat.api.core.product;
 
+import demo.ignat.api.core.product.dto.Product;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 

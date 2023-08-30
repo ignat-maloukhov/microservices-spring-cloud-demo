@@ -1,4 +1,4 @@
-package demo.ignat.api.core.product;
+package demo.ignat.api.core.product.dto;
 
 public record Product(int id,
                       String name,

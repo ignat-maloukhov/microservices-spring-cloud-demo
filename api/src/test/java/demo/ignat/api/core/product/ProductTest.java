@@ -1,5 +1,6 @@
 package demo.ignat.api.core.product;
 
+import demo.ignat.api.core.product.dto.Product;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

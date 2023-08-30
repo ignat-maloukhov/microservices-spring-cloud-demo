@@ -3,7 +3,7 @@ package demo.ignat.microservices.core.recommendation.services;
 import java.util.ArrayList;
 import java.util.List;
 
-import demo.ignat.api.core.recommendation.Recommendation;
+import demo.ignat.api.core.recommendation.dto.Recommendation;
 import demo.ignat.api.core.recommendation.RecommendationService;
 import demo.ignat.api.exception.InvalidInputException;
 import demo.ignat.util.http.ServiceUtil;

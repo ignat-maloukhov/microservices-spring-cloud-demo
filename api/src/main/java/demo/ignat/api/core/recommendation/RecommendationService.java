@@ -1,5 +1,6 @@
 package demo.ignat.api.core.recommendation;
 
+import demo.ignat.api.core.recommendation.dto.Recommendation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 

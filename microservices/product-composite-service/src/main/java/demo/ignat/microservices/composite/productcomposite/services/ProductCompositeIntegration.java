@@ -1,11 +1,11 @@
 package demo.ignat.microservices.composite.productcomposite.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import demo.ignat.api.core.product.Product;
+import demo.ignat.api.core.product.dto.Product;
 import demo.ignat.api.core.product.ProductService;
-import demo.ignat.api.core.recommendation.Recommendation;
+import demo.ignat.api.core.recommendation.dto.Recommendation;
 import demo.ignat.api.core.recommendation.RecommendationService;
-import demo.ignat.api.core.review.Review;
+import demo.ignat.api.core.review.dto.Review;
 import demo.ignat.api.core.review.ReviewService;
 import demo.ignat.api.exception.InvalidInputException;
 import demo.ignat.api.exception.NotFoundException;
