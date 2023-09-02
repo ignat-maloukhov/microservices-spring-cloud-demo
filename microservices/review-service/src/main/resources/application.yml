@@ -1,12 +1,22 @@
 server.port: 7003
 server.error.include-message: always
 
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/reviews
+    password: password
+    username: postgres
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+spring.datasource.hikari.initializationFailTimeout: 60000
+
 logging:
   level:
     root: INFO
     se.magnus: DEBUG
-
----
-spring.config.activate.on-profile: docker
-
-server.port: 8080
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

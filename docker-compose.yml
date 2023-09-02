@@ -1,28 +1,74 @@
-version: '2.1'
+version: '3.8'
 
 services:
   product:
     build: microservices/product-service
-    mem_limit: 512m
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      mongodb:
+        condition: service_healthy
 
   recommendation:
     build: microservices/recommendation-service
-    mem_limit: 512m
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      mongodb:
+        condition: service_healthy
 
   review:
     build: microservices/review-service
-    mem_limit: 512m
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      mysql:
+        condition: service_healthy
 
   product-composite:
     build: microservices/product-composite-service
-    mem_limit: 512m
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     ports:
       - "8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+
+  mongodb:
+    image: mongo:4.4.2
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    ports:
+      - "27017:27017"
+    command: mongod
+    healthcheck:
+      test: "mongo --eval 'db.stats().ok'"
+      interval: 5s
+      timeout: 2s
+      retries: 60
+
+  postgres:
+    image: 'postgres:latest'
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=reviews
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
